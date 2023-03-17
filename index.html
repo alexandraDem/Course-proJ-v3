@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перетяни-ка</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <h1>Перетяни-ка</h1>
+            <div class="nickname"><span>Введите ник: </span><input type="text" value="Player"></div>
+            <button class="ratingButton">Рейтинг</button>
+            <div class="levels">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+            </div>
+        </div>
+        <div class="gameContainer">
+            <img class="backButton" src="icons/arrow.svg" alt="">
+            <div class="game">
+                <div class="task"></div>
+                <div class="answers"></div>
+            </div>
+            <div class="gameData">
+                <p class="level">1</p>
+                <p class="question">2</p>
+                <p class="timer">00:00</p>
+            </div>
+        </div>
+        
+        <div class="endLevelScreen">
+            <div class="endLevelMenu">
+                <h2>Отлично, вы справились с уровнем всего лишь за <span class="time"></span> секунд!</h2>
+                <div class="buttons">
+                    <button class="backToMenu">В меню</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ratingScreen">
+            <img class="backButton" src="icons/arrow.svg" alt="">
+            <div class="ratingBlock">
+                <nav>
+                    <span>Level1</span>
+                    <span>Level2</span>
+                    <span>Level3</span>
+                </nav>
+                <div class="rating"></div>
+            </div>
+        </div>
+    </main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
